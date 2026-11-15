@@ -12,7 +12,7 @@ public class User {
     @Column(unique = true)
     private String username;
 
-    private String password;
+    private String passwordHash;
 
     public Long getId() {
         return id;
@@ -26,11 +26,11 @@ public class User {
         this.username = username;
     }
 
-    public String getPassword() {
-        return password;
+    public String getPasswordHash() {
+        return passwordHash;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setPasswordHash(String password) {
+        this.passwordHash = password;
     }
 }
